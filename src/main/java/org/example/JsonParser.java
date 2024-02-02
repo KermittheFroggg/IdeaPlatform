@@ -16,7 +16,7 @@ public class JsonParser {
         if (extension.equals("json")) {
             ObjectMapper objectMapper = new ObjectMapper();
 
-            Map<String, Map<String, Object>> tickets = objectMapper.readValue(Path.of(file).toAbsolutePath().toFile(), Map.class);
+            Map<String, Map<String, Object>> tickets = objectMapper.readValue(Path.of(file).toFile(), Map.class);
             return tickets;
         }
         return null;

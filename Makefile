@@ -28,7 +28,7 @@ update-deps:
 	./gradlew useLatestVersions
 
 launch:
-	gradle installDist
+	./gradlew build
 	./build/install/IdeaPlatform/bin/IdeaPlatform
 
 build-run: build run

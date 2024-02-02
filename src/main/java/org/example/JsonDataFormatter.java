@@ -41,7 +41,7 @@ public class JsonDataFormatter {
 
     public List<Ticket> getTickets() {
         return ticketsData.stream()
-                .map(ticket -> jsonToTicket(ticket))
+                .map(this::jsonToTicket)
                 .collect(Collectors.toList());
     }
 }
