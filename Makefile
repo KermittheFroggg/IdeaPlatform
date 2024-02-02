@@ -29,7 +29,8 @@ update-deps:
 
 launch:
 	./gradlew build
-	./build/install/IdeaPlatform/bin/IdeaPlatform
+	./gradlew installDist
+	./build/install/IdeaPlatform/bin/IdeaPlatform --args
 
 build-run: build run
 
